@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :teams
+  resources :sports
+  # get 'sports/index', to:"sports#show"
+
+  # get '/sports', to: "sports#new"
+  
+
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
